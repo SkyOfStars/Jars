@@ -1,0 +1,24 @@
+v4.1 2014-08-01
+--------------------
+增加checkLisenceOnly方法，仅用于判断是否激活，适合Launcher使用
+
+
+v4.0
+--------------------
+1.增加rewriteServer接口，可以重写lisence.data文件。删除相应预置内容。
+
+
+v3.3
+--------------------
+1.在LicenseInfo中新增getShowSoftVersion方法和getShowHardVersion方法，只返回相应的V版本，供显示使用。获取正式的软件版本号仍然是之前的getVersion方法。
+2.根据系统中环境变量SystemProperties.get("fc.config.path","")，读取路径值；
+3.如果读取不到，则根据版本号来判断返回
+
+
+v3.2
+--------------------
+1.根据版本号读取config目录，默认返回/fc/config，支持MAS版本
+
+
+
+
